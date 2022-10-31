@@ -24,7 +24,25 @@ int main(void){
 			printf("======================================\n");	
 		}
 	}
-
+		if (select == 2) {
+		printf("please select a seat number(31-100) ");
+		scanf_s("%d", &a);
+		if (a < 30) {
+			printf("please enter apprpriate seat  num\n");
+			i--;
+			continue;
+		}
+		if (array[a] == 0) {
+			printf("seat is available\n");
+			printf("your request is accepted\nyour boarding pass is here\n");
+			
+			printf("======================================\n");
+			printf("|| your seat number is : %d             ||\n",a);
+			printf("|| you're travelling in economy class   ||\n");
+			printf("======================================\n");	
+		}
+	}
+           
 	   array[a]=1;
 			if (array[a] == 1)
                            	{
@@ -32,7 +50,7 @@ int main(void){
              	}		
 		
 
-
+        //for the seating chart
 	if(select==4){
 		int j;
 		for(j=0;j<99;j++){
@@ -41,16 +59,9 @@ int main(void){
 		}
 		printf("\n");
 	}
+		//for exit
 	if (select==3){
 		break;
 	}
 }
 }
-
-
-
-
-
-
-
-
