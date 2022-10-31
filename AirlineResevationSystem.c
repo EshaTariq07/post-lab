@@ -42,20 +42,17 @@ int main(void){
 			printf("======================================\n");	
 		}
 	}
-           
 	   array[a]=1;
 			if (array[a] == 1)
                            	{
 		printf("seat is booked\n");
              	}		
-		
-
         //for the seating chart
 	if(select==4){
+		printf("  Seating chart:\n");
 		int j;
 		for(j=0;j<99;j++){
-			printf("%d",array[j]);
-			
+			printf("%d\t",array[j]);	
 		}
 		printf("\n");
 	}
